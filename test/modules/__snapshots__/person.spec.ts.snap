@@ -22,6 +22,8 @@ exports[`person > 42 > jobArea 1`] = `"Identity"`;
 
 exports[`person > 42 > jobDescriptor 1`] = `"National"`;
 
+exports[`person > 42 > jobTitle 1`] = `"National Usability Producer"`;
+
 exports[`person > 42 > jobType 1`] = `"Coordinator"`;
 
 exports[`person > 42 > lastName > noArgs 1`] = `"Reynolds-Miller"`;
@@ -74,6 +76,8 @@ exports[`person > 1211 > jobArea 1`] = `"Factors"`;
 
 exports[`person > 1211 > jobDescriptor 1`] = `"Chief"`;
 
+exports[`person > 1211 > jobTitle 1`] = `"Chief Interactions Manager"`;
+
 exports[`person > 1211 > jobType 1`] = `"Representative"`;
 
 exports[`person > 1211 > lastName > noArgs 1`] = `"Fahey"`;
@@ -125,6 +129,8 @@ exports[`person > 1337 > gender 1`] = `"Demigender"`;
 exports[`person > 1337 > jobArea 1`] = `"Functionality"`;
 
 exports[`person > 1337 > jobDescriptor 1`] = `"Future"`;
+
+exports[`person > 1337 > jobTitle 1`] = `"Future Marketing Engineer"`;
 
 exports[`person > 1337 > jobType 1`] = `"Engineer"`;
 

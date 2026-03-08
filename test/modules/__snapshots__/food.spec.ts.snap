@@ -4,6 +4,8 @@ exports[`food > 42 > adjective 1`] = `"golden"`;
 
 exports[`food > 42 > description 1`] = `"A zesty peppers creation, seasoned with liquorice root and bay leaves, showcasing the best of plant-based cuisine."`;
 
+exports[`food > 42 > dish 1`] = `"Camryn's Special Buckwheat Flour"`;
+
 exports[`food > 42 > ethnicCategory 1`] = `"Gujarati"`;
 
 exports[`food > 42 > fruit 1`] = `"fingerlime"`;
