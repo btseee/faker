@@ -34,6 +34,7 @@ export type { FakerOptions } from './faker';
 export * from './locale';
 export { fakerEN as faker } from './locale';
 export * from './locales';
+export { moduleRegistry } from './module-registry';
 export { Aircraft } from './modules/airline';
 export type { AircraftType, AirlineModule } from './modules/airline';
 export type { AnimalModule } from './modules/animal';
