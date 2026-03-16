@@ -1,6 +1,9 @@
 import type { FakerCore } from '../../faker-core';
 import { assertLocaleData } from '../../internal/locale-proxy';
 import { fake } from '../helpers/fake';
+import { int } from '../number/int';
+import { firstName } from '../person/first-name';
+import { lastName } from '../person/last-name';
 
 /**
  * Generates a random localized street name.
@@ -18,6 +21,10 @@ export function street(fakerCore: FakerCore): string {
     assertLocaleData(
       fakerCore.definitions.location?.street_pattern,
       'location.street_pattern'
-    )
+    ),
+    [
+      { number: { int }, person: { firstName, lastName } },
+      fakerCore.definitions,
+    ]
   );
 }

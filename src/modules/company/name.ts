@@ -1,6 +1,9 @@
 import type { FakerCore } from '../../faker-core';
 import { assertLocaleData } from '../../internal/locale-proxy';
 import { fake } from '../helpers/fake';
+import { city } from '../location/city';
+import { firstName } from '../person/first-name';
+import { lastName } from '../person/last-name';
 
 /**
  * Generates a random company name.
@@ -18,6 +21,10 @@ export function name(fakerCore: FakerCore): string {
     assertLocaleData(
       fakerCore.definitions.company?.name_pattern,
       'company.name_pattern'
-    )
+    ),
+    [
+      { location: { city }, person: { firstName, lastName } },
+      fakerCore.definitions,
+    ]
   );
 }

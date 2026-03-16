@@ -3,6 +3,8 @@ import { assertLocaleData } from '../../internal/locale-proxy';
 import { boolean } from '../datatype/boolean';
 import { arrayElement } from '../helpers/array-element';
 import { fake } from '../helpers/fake';
+import { firstName } from '../person/first-name';
+import { lastName } from '../person/last-name';
 
 // Temp export
 /**
@@ -36,7 +38,8 @@ export function dish(fakerCore: FakerCore): string {
         assertLocaleData(
           fakerCore.definitions.food?.dish_pattern,
           'food.dish_pattern'
-        )
+        ),
+        [{ person: { firstName, lastName } }, fakerCore.definitions]
       )
     );
   }
